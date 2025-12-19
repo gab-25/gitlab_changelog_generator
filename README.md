@@ -1,0 +1,1 @@
+# gitlab_changelog_generator
