@@ -88,7 +88,7 @@ def run():
     parser = argparse.ArgumentParser(description="Generate gitlab CHANGELOG.md")
     parser.add_argument("project_id", type=int, help="The ID of the project")
     parser.add_argument("--changelog", "-c", type=str, default="./CHANGELOG.md",
-                        help="The path to the changelog file, default=./CHANGELOG.MD")
+                        help="The path to the changelog file, default=./CHANGELOG.md")
     parser.add_argument("--branch", "-b", type=str, default="main", help="The target branch, default=main")
 
     args = parser.parse_args()
