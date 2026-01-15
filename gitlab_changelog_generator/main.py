@@ -9,7 +9,10 @@ import keepachangelog
 from dotenv import load_dotenv
 from gitlab.v4.objects import Project, ProjectMergeRequest
 
-load_dotenv()
+if os.getenv("DEV_MODE") == "true":
+    load_dotenv()
+else:
+    load_dotenv(os.path.expanduser("~/.gitlab_changelog_generator"))
 
 LABEL_RELEASE = "Release"
 LABELS_CHANGELOG = ["Added", "Fixed", "Changed", "Deprecated"]

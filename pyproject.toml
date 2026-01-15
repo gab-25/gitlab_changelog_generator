@@ -1,6 +1,6 @@
 [project]
 name = "gitlab-changelog-generator"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = [
     { name = "gab-25", email = "gabrielesorci.25@gmail.com" }
