@@ -3,12 +3,18 @@ name = "gitlab-changelog-generator"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "gab-25",email = "gabrielesorci.25@gmail.com"}
+    { name = "gab-25", email = "gabrielesorci.25@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "python-gitlab (>=7.0.0,<8.0.0)",
+    "keepachangelog (>=2.0.0,<3.0.0)"
 ]
+
+[project.scripts]
+gitlab-changelog-generator = 'gitlab_changelog_generator.main:run'
 
 
 [build-system]
